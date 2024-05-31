@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{074A4025-39CB-4CE2-A22B-DA24274C0D57}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Home_workout_application</RootNamespace>
+    <AssemblyName>Home workout application</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cardio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cardio.Designer.cs">
+      <DependentUpon>cardio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dumbell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dumbell.Designer.cs">
+      <DependentUpon>dumbell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timex.Designer.cs">
+      <DependentUpon>Timex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resis.Designer.cs">
+      <DependentUpon>resis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="simple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="simple.Designer.cs">
+      <DependentUpon>simple.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cardio.resx">
+      <DependentUpon>cardio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dumbell.resx">
+      <DependentUpon>dumbell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timex.resx">
+      <DependentUpon>Timex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="resis.resx">
+      <DependentUpon>resis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="simple.resx">
+      <DependentUpon>simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2548530.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2820648-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1853696-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2820648-2001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25485301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%291.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1853696-2001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Article_Banner-1-34-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3725272-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-spinning-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plank-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pushups-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-skipping-rope-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-spinning-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-skipping-rope-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plank-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pullups-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-weightlifting-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\push-ups-1000x1000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pull-ups-1000x1000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chin-ups-1000x1000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bodyweight-squat-1000x1000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ehfc-full-body-bodyweight-header-1440x810.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40630999.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39603318.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38587853.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-03-11 2011522.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dumbbell-bench-press-1000x1000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dumbbell-lateral-raise-1000x1000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dumbbell-shoulder-press-1000x1000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dumbbell-shoulder-press-1000x10001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dumbbell-curl-1000x1000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bodybuilding-exercise-flat-color-vector-illustration-strong-sportsman-lifting-dumbbells-2d-cartoon-character-with-gym-on-background-weightlifting-tr-2DBRY94.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plank.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Treadmill-.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jump-Rope.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power-Skips.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-696916974-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD-wallpaper-start-now-not-tomorrow-motivation-creative-art-pink-background-art.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
